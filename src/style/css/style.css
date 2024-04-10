@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #151010;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: rgb(236, 194, 194);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.logo {
+    display: inline-block;
+    width: 300px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav {
+    display: inline-block;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #333333;
+    padding: 60px 15px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: rebeccapurple;
+    color: #ff6600;
+}
+
+.nav__dropdown-list {
+    display: none;
+    position: absolute;
+    top: 117px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+
+}
+
+.nav__item:hover .nav__dropdown-list {
+    display: block;
+    opacity: 1;
+    background-color: lightcyan;
+
+}
+
+.nav__dropdown-list li {
+    margin-bottom: 5px;
+}
+
+.nav__dropdown-list li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.nav__dropdown-list li a:hover {
+    color: #ff6600;
+}
+
+.nav__dropdown-item {
+    list-style: none;
+}
+
+/* Респонсивність для навігаційного меню */
+@media (max-width: 768px) {
+    .nav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav__item {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.placeholder {
+    height: 100vh;
+}
+
+
+
+/* main */
+.main {}
+
+.services {}
+
+.container {
+    max-width: 1600px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.services__title {
+    color: #ccc;
+}
+
+.title {}
+
+.services__card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.services__card-item {
+    max-width: 25%;
+    padding: 20px;
+    background-color: black;
+    color: #ccc;
+    border: rgb(82, 82, 82) 1px solid;
+    border-radius: 15px;
+}
+
+.services__card-title {
+    text-align: center;
+}
+
+.services__card-list {
+}
+
+.services__card-listitem {
+    
+}
+
+
+
+.choose {
+    background-color: #151010;
+}
+
+.choose__title {
+    color: #ccc;
+}
+
+.choose__card-title {
+}
+
+.title {}
+
+.choose__card-container {
+    color: #ccc;
+    display: flex;
+    gap: 15px;
+}
+
+.choose__card-item {
+    padding: 20px;
+    background-color: black;
+    border: rgb(82, 82, 82) 1px solid;
+    border-radius: 15px;
+}
+
+.choose__card-text {}
+
+
+
+.text-field {
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.additional-info {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.additional-info.active {
+    max-height: 250px;
+    transition: max-height 1s ease-in-out;
+}
