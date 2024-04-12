@@ -412,7 +412,8 @@ svg {
         &_company {
             max-width: 350px;
             img {
-                background-color: $color-backgroung-drop;  
+                max-width: 200px;
+                background-color: $color-backgroung-drop;
             }
         }
 

@@ -282,6 +282,7 @@ svg {
   max-width: 350px;
 }
 .footer__flex-item_company img {
+  max-width: 200px;
   background-color: #eee;
 }
 .footer__flex-item_links {
