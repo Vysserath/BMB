@@ -163,7 +163,7 @@ svg {
 .services__img {
   width: 100%;
   height: 475px;
-  background: url(../../../images/services-2.jpg);
+  background: url(../../../images/services.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 5px;
@@ -204,6 +204,20 @@ svg {
   object-fit: contain;
 }
 
+@media (max-width: 1025px) {
+  .services__img {
+    max-width: 30vw;
+    height: 500px;
+  }
+}
+@media (max-width: 1000px) {
+  .services__img {
+    display: none;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+}
 .choose {
   margin-bottom: 100px;
 }
@@ -215,10 +229,9 @@ svg {
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  flex-wrap: wrap;
 }
 .choose__card-item {
-  max-width: 24%;
+  max-width: 25%;
   padding: 20px;
   background-color: black;
   border: #D01B17 1px solid;
@@ -229,6 +242,25 @@ svg {
 }
 .choose__card-item:nth-child(odd) {
   margin-bottom: 50px;
+}
+@media (max-width: 1025px) {
+  .choose__card-container {
+    flex-wrap: wrap;
+  }
+  .choose__card-item {
+    max-width: 48%;
+  }
+  .choose__card-item:nth-child(even) {
+    margin-top: 0;
+  }
+  .choose__card-item:nth-child(odd) {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 700px) {
+  .choose__card-item {
+    max-width: 100%;
+  }
 }
 .footer {
   background: #000;
@@ -301,12 +333,6 @@ svg {
 }
 
 @media (max-width: 1023px) {
-  main {
-    display: none;
-  }
-  .footer {
-    padding-top: 100vh;
-  }
   .footer__flex-item_company {
     max-width: 200px;
   }
