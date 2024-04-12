@@ -265,6 +265,10 @@ svg {
     max-width: 100%;
   }
 }
+.map .container {
+  max-width: 100%;
+  padding: 0;
+}
 .footer {
   background: #000;
   color: #ccc;
