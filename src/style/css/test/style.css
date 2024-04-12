@@ -92,7 +92,7 @@ body {
 
 @media (max-width: 1023px) {
   .header__wrapper {
-    padding: 20px;
+    padding: 0 15px;
   }
   .header__label {
     display: initial;
