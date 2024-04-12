@@ -337,12 +337,20 @@ svg {
         background-color: black;
         border: $color-accent 1px solid;
         border-radius: $border-radius;
-
+        transition: all 0.5s ease-in-out;
         &:nth-child(even) {
             margin-top: 50px;
+
+            &:hover {
+                transform: translateY(-25px);
+            }
         }
         &:nth-child(odd) {
             margin-bottom: 50px;
+
+            &:hover {
+                transform: translateY(25px);
+            }
         }
     }
 
@@ -363,10 +371,18 @@ svg {
 
             &:nth-child(even) {
                 margin-top: 0;
+
+                &:hover {
+                    transform: none;
+                }
             }
 
             &:nth-child(odd) {
                 margin-bottom: 0;
+
+                &:hover {
+                    transform: none;
+                }
             }
         }
     }

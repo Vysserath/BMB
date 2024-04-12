@@ -239,12 +239,19 @@ svg {
   background-color: black;
   border: #D01B17 1px solid;
   border-radius: 5px;
+  transition: all 0.5s ease-in-out;
 }
 .choose__card-item:nth-child(even) {
   margin-top: 50px;
 }
+.choose__card-item:nth-child(even):hover {
+  transform: translateY(-25px);
+}
 .choose__card-item:nth-child(odd) {
   margin-bottom: 50px;
+}
+.choose__card-item:nth-child(odd):hover {
+  transform: translateY(25px);
 }
 @media (max-width: 1025px) {
   .choose__card-container {
@@ -256,8 +263,14 @@ svg {
   .choose__card-item:nth-child(even) {
     margin-top: 0;
   }
+  .choose__card-item:nth-child(even):hover {
+    transform: none;
+  }
   .choose__card-item:nth-child(odd) {
     margin-bottom: 0;
+  }
+  .choose__card-item:nth-child(odd):hover {
+    transform: none;
   }
 }
 @media (max-width: 700px) {
