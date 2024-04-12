@@ -7,33 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../src/style/css/style.css">
+    <link rel="stylesheet" href="../src/style/css/test/style.css">
 
 </head>
 <body>
     <header class="header">
-        <div class="wrap">
-            <!-- Логотип -->
-            <a href="../index.html" class="logo">
-                <img src="../src/images/logo.svg" alt="Логотип компанії">
-            </a>
-            <!-- Навігаційне меню -->
+        <div class="header__wrapper">
+            <a href="../index.html" class="logo"><img class="logo__img" src="../src/images/logo.svg" alt=""></a>
+
+            <input type="checkbox" id="menu-bar">
+            <label class="header__label" for="menu-bar">Menu</label>
+
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="../index.html" class="nav__link">Основна сторінка</a></li>
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Головна</a></li>
                     <li class="nav__item"><a href="approach.html" class="nav__link">Наш підхід</a></li>
                     <li class="nav__item"><a href="services.html" class="nav__link">Послуги</a></li>
                     <li class="nav__item"><a href="price.html" class="nav__link">Прайс</a></li>
-                    <li class="nav__item nav__dropdown">
-                        <a href="projects.html" class="nav__link">Проєкти</a>
-                        <ul class="nav__dropdown-list"> <!-- Випадаючий список під "Проєкти" -->
-                            <li class="nav__dropdown-item"><a href="#">Приватна забудова</a></li>
-                            <li class="nav__dropdown-item"><a href="#">Громадські будівлі</a></li>
-                            <li class="nav__dropdown-item"><a href="#">Промислово-комунальні будівлі</a></li>
-                            <li class="nav__dropdown-item"><a href="#">Інженерні споруди</a></li>
-                            <li class="nav__dropdown-item"><a href="#">Паркова архітектура</a></li>
-                            <li class="nav__dropdown-item"><a href="#">Дизайн інтер’єру</a></li>
-                            <li class="nav__dropdown-item"><a href="#">Ландшафтний дизайн</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link">Проєкти +</a>
+                        <ul class="nav__dropdown-list">
+                            <li class="nav__item nav__dropdown-item"><a class="nav__link nav__dropdown-link" href="#">Приватна забудова</a></li>
+                            <li class="nav__item nav__dropdown-item"><a class="nav__link nav__dropdown-link" href="#">Громадські будівлі</a></li>
+                            <li class="nav__item nav__dropdown-item"><a class="nav__link nav__dropdown-link" href="#">Промислово-комунальні будівлі</a></li>
+                            <li class="nav__item nav__dropdown-item"><a class="nav__link nav__dropdown-link" href="#">Інженерні споруди</a></li>
+                            <li class="nav__item nav__dropdown-item"><a class="nav__link nav__dropdown-link" href="#">Паркова архітектура</a></li>
+                            <li class="nav__item nav__dropdown-item"><a class="nav__link nav__dropdown-link" href="#">Дизайн інтер’єру</a></li>
+                            <li class="nav__item nav__dropdown-item"><a class="nav__link nav__dropdown-link" href="#">Ландшафтний дизайн</a></li>
                         </ul>
                     </li>
                     <li class="nav__item"><a href="team.html" class="nav__link">Команда</a></li>
@@ -42,5 +41,109 @@
             </nav>
         </div>
     </header>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <div class="footer__flex-item footer__flex-item_company">
+                    <a href="../index.html">
+                        <img src="../src/images/logo.svg" alt="Company logo">
+                    </a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cumque eligendi deleniti exercitationem adipisci sit!</p>
+
+                </div>
+
+                <div class="footer__flex-item footer__flex-item_services">
+                    <h3>Посилання</h3>
+                    <div class="footer__flex-item_links">
+                        <a href="approach.html">Наш підхід</a>
+                        <a href="services.html">Послуги</a>
+                        <a href="price.html">Прайс</a>
+                        <a href="projects.html">Проєкти</a>
+                        <a href="team.html">Команда</a>
+                        <a href="contacts.html">Контакти</a>
+                    </div>
+                </div>
+
+                <div class="footer__flex-item footer__flex-item_contacts">
+                    <h3>Контакти</h3>
+                    <div class="footer__flex-item_contact-details">
+                        <a href="https://maps.app.goo.gl/KBaW4Dd9eZF64S6J9">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">
+                                <g id="_01_align_center">
+                                    <path d="M255.104,512.171l-14.871-12.747C219.732,482.258,40.725,327.661,40.725,214.577c0-118.398,95.981-214.379,214.379-214.379   s214.379,95.981,214.379,214.379c0,113.085-179.007,267.682-199.423,284.932L255.104,512.171z M255.104,46.553   c-92.753,0.105-167.918,75.27-168.023,168.023c0,71.042,110.132,184.53,168.023,236.473   c57.892-51.964,168.023-165.517,168.023-236.473C423.022,121.823,347.858,46.659,255.104,46.553z"/>
+                                    <path d="M255.104,299.555c-46.932,0-84.978-38.046-84.978-84.978s38.046-84.978,84.978-84.978s84.978,38.046,84.978,84.978   S302.037,299.555,255.104,299.555z M255.104,172.087c-23.466,0-42.489,19.023-42.489,42.489s19.023,42.489,42.489,42.489   s42.489-19.023,42.489-42.489S278.571,172.087,255.104,172.087z"/>
+                                </g>
+                            </svg>
+                            <p>Єжи Ґедройця 6, Київ, 02000</p>
+                        </a>
+                    </div>
+
+                    <div class="footer__flex-item_contact-details">
+                        <a href="tel:+380981193969">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512">
+                                <path d="M13,1a1,1,0,0,1,1-1A10.011,10.011,0,0,1,24,10a1,1,0,0,1-2,0,8.009,8.009,0,0,0-8-8A1,1,0,0,1,13,1Zm1,5a4,4,0,0,1,4,4,1,1,0,0,0,2,0,6.006,6.006,0,0,0-6-6,1,1,0,0,0,0,2Zm9.093,10.739a3.1,3.1,0,0,1,0,4.378l-.91,1.049c-8.19,7.841-28.12-12.084-20.4-20.3l1.15-1A3.081,3.081,0,0,1,7.26.906c.031.031,1.884,2.438,1.884,2.438a3.1,3.1,0,0,1-.007,4.282L7.979,9.082a12.781,12.781,0,0,0,6.931,6.945l1.465-1.165a3.1,3.1,0,0,1,4.281-.006S23.062,16.708,23.093,16.739Zm-1.376,1.454s-2.393-1.841-2.424-1.872a1.1,1.1,0,0,0-1.549,0c-.027.028-2.044,1.635-2.044,1.635a1,1,0,0,1-.979.152A15.009,15.009,0,0,1,5.9,9.3a1,1,0,0,1,.145-1S7.652,6.282,7.679,6.256a1.1,1.1,0,0,0,0-1.549c-.031-.03-1.872-2.425-1.872-2.425a1.1,1.1,0,0,0-1.51.039l-1.15,1C-2.495,10.105,14.776,26.418,20.721,20.8l.911-1.05A1.121,1.121,0,0,0,21.717,18.193Z"/>
+                            </svg>
+                            <p>+380981193969</p>
+                        </a>
+                    </div>
+                    <div class="footer__flex-item_contact-details">
+                        <a href="mailto:">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512">
+                                <path d="M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z"/>
+                            </svg>                            
+                            <p>BMB@example.com</p>
+                        </a>
+                    </div>
+                    
+                    <div class="social">
+                        <a href="" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+                                <g>
+                                    <path d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"/>
+                                </g>
+                            </svg>      
+                        </a>
+                        <a href="" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+                                <g>
+                                    <path d="M12.01,0C5.388,0,0.02,5.368,0.02,11.99c0,5.082,3.158,9.424,7.618,11.171c-0.109-0.947-0.197-2.408,0.039-3.444   c0.217-0.938,1.401-5.961,1.401-5.961s-0.355-0.72-0.355-1.776c0-1.668,0.967-2.911,2.171-2.911c1.026,0,1.52,0.77,1.52,1.688   c0,1.026-0.651,2.566-0.997,3.997c-0.286,1.194,0.602,2.171,1.776,2.171c2.132,0,3.77-2.25,3.77-5.487   c0-2.872-2.062-4.875-5.013-4.875c-3.414,0-5.418,2.556-5.418,5.201c0,1.026,0.395,2.132,0.888,2.734   C7.52,14.615,7.53,14.724,7.5,14.842c-0.089,0.375-0.296,1.194-0.336,1.362c-0.049,0.217-0.178,0.266-0.405,0.158   c-1.5-0.701-2.438-2.882-2.438-4.648c0-3.78,2.743-7.253,7.924-7.253c4.155,0,7.391,2.961,7.391,6.928   c0,4.135-2.605,7.461-6.217,7.461c-1.214,0-2.359-0.632-2.743-1.382c0,0-0.602,2.289-0.75,2.852   c-0.266,1.046-0.997,2.349-1.49,3.148C9.562,23.812,10.747,24,11.99,24c6.622,0,11.99-5.368,11.99-11.99C24,5.368,18.632,0,12.01,0   z"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g transform="matrix(1.1399999999999992,0,0,1.1399999999999992,-35.839999999999804,-35.839999999999804)">
+                                    <path d="M303.8 158.9h-95.5c-27.2 0-49.4 22.1-49.4 49.4v95.5c0 27.2 22.1 49.4 49.4 49.4h95.5c27.2 0 49.4-22.1 49.4-49.4v-95.5c-.1-27.3-22.2-49.4-49.4-49.4zm-47.8 161c-35.2 0-63.9-28.7-63.9-63.9s28.7-63.9 63.9-63.9 63.9 28.7 63.9 63.9-28.7 63.9-63.9 63.9zm67.1-120.7c-6 0-10.8-4.8-10.8-10.8s4.8-10.8 10.8-10.8 10.8 4.8 10.8 10.8-4.8 10.8-10.8 10.8z" opacity="1" data-original="#000000" class=""></path>
+                                    <circle cx="256" cy="256" r="38.8" transform="rotate(-89.31 256.026 255.981)" opacity="1" data-original="#000000" class=""></circle>
+                                    <path d="M256 31C131.7 31 31 131.7 31 256s100.7 225 225 225 225-100.7 225-225S380.3 31 256 31zm125 272.8c0 42.6-34.6 77.2-77.2 77.2h-95.5c-42.6 0-77.2-34.6-77.2-77.2v-95.5c0-42.6 34.6-77.2 77.2-77.2h95.5c42.6 0 77.2 34.6 77.2 77.2z" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g transform="matrix(1.14,0,0,1.14,-35.839999999999975,-35.839999999999975)">
+                                    <path d="M215.4 268.4c-4.3-1.5-13.5-2.3-27.8-2.3h-19.5c-.6 0-1 .5-1 1v40.1c0 .6.4 1 1 1h23.2c11.3 0 18.4-.3 21.5-1 4.7-.9 8.4-3 11.4-6.3 2.9-3.3 4.4-7.8 4.4-13.4 0-4.7-1.1-8.7-3.4-12-2.3-3.2-5.5-5.6-9.8-7.1zM326 237c-6.9 0-12.6 2.4-17.1 7.3-4.3 4.7-6.2 9.2-6.6 15.7 0 .6.5 1.2 1.2 1.2h44.9c.7 0 1.2-.6 1.2-1.2 0-5.9-2.8-11.7-7.1-16.1-4.6-4.6-10-6.9-16.5-6.9zM168.1 239.9h14.7c12.2 0 19.8-.2 22.8-.5 5.4-.6 9.6-2.5 12.6-5.6 3.1-3.1 4.6-7.2 4.6-12.3 0-4.9-1.3-8.8-4-11.9-2.6-3-6.6-4.9-11.8-5.5-3.1-.4-12-.5-26.8-.5H168c-.6 0-1 .5-1 1V239c.1.4.6.9 1.1.9z" opacity="1" data-original="#000000" class=""></path>
+                                    <path d="M256 31C131.7 31 31 131.7 31 256s100.7 225 225 225 225-100.7 225-225S380.3 31 256 31zm37.9 155.7c0-2.5 2.1-4.6 4.6-4.6h53.2c2.5 0 4.6 2.1 4.6 4.6v7.7c0 2.5-2.1 4.6-4.6 4.6h-53.2c-2.5 0-4.6-2.1-4.6-4.6zM256 310c-3.3 6.8-7.8 12.2-13.4 16.2-5.7 4.1-12.7 6.5-21 7.5-5.2.6-17.8.9-33 1.1h-51.8c-5.4 0-5.8-.5-5.8-1V178.2c0-.6.4-1 5.8-1h61c7.5 0 16.6.5 22.7 1.6 6 1 11.4 3.2 16.2 6.5s8.7 7.7 11.9 13.2 4.8 11.6 4.8 18.4c0 7.4-2 14.2-5.9 20.3-3.5 5.5-8.1 9.7-13.7 12.8-.8.4-.7 1.6.1 1.8 8.3 2.9 14.8 7.4 19.5 13.5 5.1 6.7 7.6 14.7 7.6 23.8-.1 7.2-1.7 14.1-5 20.9zm125-28.2c0 .6-.5 1.2-1.2 1.2h-76.9c-.7 0-1.2.6-1.2 1.2.4 8.5 2.9 13.8 7.6 18.6 4.9 5.1 10.9 6.5 18.2 6.5 6.7 0 17-2 20-13.2.1-.5.7-.9 1.3-.8l29.2.3c.7.1 1 .8.9 1.6-.4 9.9-10.4 23.1-18.8 28.7-8.7 5.9-19.7 8.8-32.8 8.8-20.8 0-36.2-6.6-46.2-19.8-7.9-10.6-11.8-23.9-11.8-40 0-19.2 5.2-34.3 15.5-45.2 10.4-10.9 23.5-16.3 39.3-16.3 17.8 0 31.8 5.7 42.1 17.1 10 11.2 15.1 20.6 14.8 51.3z" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+                                <g id="Artboard">
+                                    <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z    M17.562,8.161c-0.18,1.897-0.962,6.502-1.359,8.627c-0.168,0.9-0.5,1.201-0.82,1.23c-0.697,0.064-1.226-0.461-1.901-0.903   c-1.056-0.692-1.653-1.123-2.678-1.799c-1.185-0.781-0.417-1.21,0.258-1.911c0.177-0.184,3.247-2.977,3.307-3.23   c0.007-0.032,0.015-0.15-0.056-0.212s-0.174-0.041-0.248-0.024c-0.106,0.024-1.793,1.139-5.062,3.345   c-0.479,0.329-0.913,0.489-1.302,0.481c-0.428-0.009-1.252-0.242-1.865-0.442c-0.751-0.244-1.349-0.374-1.297-0.788   c0.027-0.216,0.324-0.437,0.892-0.663c3.498-1.524,5.831-2.529,6.998-3.015c3.333-1.386,4.025-1.627,4.477-1.635   C17.472,7.214,17.608,7.681,17.562,8.161z"/>
+                                </g>
+                            </svg>                                
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

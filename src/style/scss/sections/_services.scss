@@ -1,0 +1,74 @@
+@import 'variables.scss';
+// Services page 
+.hero_service {
+    height: 100vh;
+    background: url(../../../images/render-home.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.service {
+    color: $color-text;
+
+    &__title {
+    }
+
+    &__info {
+        max-width: 100%;
+        margin: 2rem auto 0;
+        border-bottom: 2px solid $color-background-light;
+        cursor: pointer;
+
+        &.active .service__more {
+            max-height: 300px;
+            animation: fade 0.5s ease-in-out;
+        }
+
+        &.active svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__less {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__less-text {
+        margin: 0 0 1rem;
+        font-size: 1.8rem;
+    }
+
+    &__more {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1.4s ease;
+    }
+
+    &__more-text {
+        margin: 0;
+        line-height: 1.6;
+        font-size: 1.4rem;
+    }
+
+    & svg {
+        fill: none;
+        transition: transform 0.5s ease;
+    }
+}
+.container {
+}
+.title {
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

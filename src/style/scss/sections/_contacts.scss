@@ -1,0 +1,110 @@
+@import 'variables.scss';
+
+.contact {
+    
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+
+        textarea {
+            height: 140px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 15px 25px;
+            resize: inherit;
+            overflow-y: scroll;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+
+    &__form-title {
+        h2 {
+            font-weight: 600;
+            font-size: 40px;
+            color: $color-text;
+            margin-bottom: 5px;
+        }
+        
+        hr {
+            border: none;
+            width: 120px;
+            height: 5px;
+            background-color: $color-accent;
+            border-radius: 10px;
+            margin:0 20px 0 0;
+        }
+    }
+
+    &__input {
+        width: 400px;
+        height: 50px;
+        border: 2px solid $color-text-alternate;
+        outline: none;
+        padding-left: 25px;
+        font-weight: 500;
+        font-size: 16px;
+        color: $color-backgroung-drop;
+        background-color: $color-background;
+        border-radius: 50px;
+
+        &:focus {
+            border: 2px solid $color-accent;
+        }
+        &::placeholder {
+            font-family: $font-main;
+            color: $color-text;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        font-size: 16px;
+        background-color: $color-background;
+        color: $color-text;
+        border: 3px solid $color-text-alternate;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        
+        &:hover {
+            border: 3px solid $color-accent;
+        }
+    }
+
+    &__img {
+        width: 500px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    } 
+}
+
+@media (max-width:800px) {
+    .contact {
+        &__input {
+            width: 80vw;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
