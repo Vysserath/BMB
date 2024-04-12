@@ -214,6 +214,9 @@ svg {
   .services__img {
     display: none;
   }
+  .services__card-container {
+    justify-content: center;
+  }
   .wrapper {
     flex-direction: column;
   }

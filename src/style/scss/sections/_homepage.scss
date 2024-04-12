@@ -303,6 +303,10 @@ svg {
         &__img {
             display: none;
         }
+
+        &__card-container {
+            justify-content: center;
+        }
     }
 
     .wrapper {
