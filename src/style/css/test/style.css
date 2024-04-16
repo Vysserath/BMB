@@ -162,7 +162,7 @@ svg {
 }
 .services__img {
   width: 100%;
-  height: 475px;
+  height: 512px;
   background: url(../../../images/services.jpg);
   background-position: center;
   background-size: cover;
@@ -570,44 +570,30 @@ svg {
   background-size: cover;
 }
 
-.service {
+.service__button {
+  background-color: #1c1c1c;
   color: #ccc;
-}
-.service__info {
-  max-width: 100%;
-  margin: 2rem auto 0;
-  border-bottom: 2px solid #fff;
   cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
 }
-.service__info.active .service__more {
-  max-height: 300px;
-  animation: fade 0.5s ease-in-out;
+.service .active, .service__button:hover {
+  background-color: #000;
+  color: #D01B17;
 }
-.service__info.active svg {
-  transform: rotate(180deg);
-}
-.service__less {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.service__less-text {
-  margin: 0 0 1rem;
-  font-size: 1.8rem;
-}
-.service__more {
+.service__drop {
+  padding: 0 18px;
+  background-color: #1c1c1c;
+  color: #ccc;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.4s ease;
-}
-.service__more-text {
-  margin: 0;
-  line-height: 1.6;
-  font-size: 1.4rem;
-}
-.service svg {
-  fill: none;
-  transition: transform 0.5s ease;
+  transition: all 0.2s ease-out;
+  border-bottom: 2px solid #333;
 }
 
 @keyframes fade {

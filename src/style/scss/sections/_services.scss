@@ -8,54 +8,33 @@
 }
 
 .service {
-    color: $color-text;
-
-    &__title {
-    }
-
-    &__info {
-        max-width: 100%;
-        margin: 2rem auto 0;
-        border-bottom: 2px solid $color-background-light;
+    &__button {
+        background-color: $color-background;
+        color: $color-text;
         cursor: pointer;
-
-        &.active .service__more {
-            max-height: 300px;
-            animation: fade 0.5s ease-in-out;
-        }
-
-        &.active svg {
-            transform: rotate(180deg);
-        }
-    }
-
-    &__less {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__less-text {
-        margin: 0 0 1rem;
-        font-size: 1.8rem;
-    }
-
-    &__more {
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: 0.4s;
+      }
+      
+      .active, &__button:hover {
+        background-color: $color-backgroung-card;
+        color: $color-accent;
+      }
+      
+      &__drop {
+        padding: 0 18px;
+        background-color: $color-background;
+        color: $color-text;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 1.4s ease;
-    }
-
-    &__more-text {
-        margin: 0;
-        line-height: 1.6;
-        font-size: 1.4rem;
-    }
-
-    & svg {
-        fill: none;
-        transition: transform 0.5s ease;
-    }
+        transition: all 0.2s ease-out;
+        border-bottom: 2px solid $color-text-alternate;
+      }
 }
 .container {
 }
