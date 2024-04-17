@@ -90,6 +90,14 @@ body {
   display: none;
 }
 
+@media (max-width: 1025px) {
+  .header__wrapper {
+    padding: 0 15px;
+  }
+  .nav__link {
+    padding: 20px;
+  }
+}
 @media (max-width: 1023px) {
   .header__wrapper {
     padding: 0 15px;

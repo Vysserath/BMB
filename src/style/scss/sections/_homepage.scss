@@ -115,6 +115,20 @@ body {
     display: none;
 }
 
+@media(max-width:1025px) {
+
+    .header {
+        &__wrapper {
+            padding: 0 15px;
+        }
+    }
+
+    .nav {
+        &__link {
+            padding: 20px;
+        }
+    }
+}
 @media(max-width:1023px) {
 
     .header {
