@@ -499,8 +499,8 @@ svg {
   position: relative;
   border: 2px solid #333;
   border-radius: 5px;
-  padding: 20px;
-  width: 35vw;
+  padding: 10px;
+  width: 100%;
   display: none;
 }
 .filter__card:hover .filter__link_text {
@@ -524,7 +524,7 @@ svg {
 .filter__link_img {
   overflow: hidden;
   width: 100%;
-  height: 20vw;
+  height: 45vw;
 }
 .filter__link_img img {
   width: 100%;
@@ -533,13 +533,13 @@ svg {
   transition: all 0.3s ease-in-out;
 }
 .filter__link_text {
-  display: none;
   position: absolute;
-  bottom: 10%;
-  left: 5%;
-  font-size: 20px;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
   font-weight: bold;
-  max-width: 90%;
+  width: calc(100% - 20px);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 .filter__link_text:hover {
   color: #fff;
@@ -568,6 +568,7 @@ svg {
 }
 .filter .container {
   overflow: hidden;
+  padding: 0 20px;
 }
 .filter .container_flex {
   display: flex;
@@ -577,22 +578,44 @@ svg {
   margin-top: 40px;
 }
 
-@media (max-width: 1025px) {
-  .filter__card {
-    padding: 15px;
-    width: 44vw;
-  }
-  .filter__link_img {
-    height: 27vw;
+@media (min-width: 414px) {
+  .filter__link_text {
+    font-size: 14px;
   }
 }
-@media (max-width: 991px) {
+@media (min-width: 768px) {
+  .filter__link_text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 991px) {
   .filter__card {
     padding: 15px;
-    width: 80vw;
+    width: calc(50% - 10px);
   }
   .filter__link_img {
-    height: 40vw;
+    height: 22vw;
+  }
+  .filter__link_text {
+    bottom: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+  }
+}
+@media (min-width: 1024px) {
+  .filter__card {
+    padding: 20px;
+    width: calc(50% - 10px);
+  }
+  .filter__link_img {
+    height: 22vw;
+  }
+  .filter__link_text {
+    display: none;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    font-size: 20px;
   }
 }
 .hero_service {

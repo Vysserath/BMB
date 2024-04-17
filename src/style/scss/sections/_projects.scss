@@ -2,14 +2,14 @@
 
 .filter {
 
-    margin-top: 100px;
+margin-top: 100px;
 
     &__card {
         position: relative;
         border: 2px solid $color-text-alternate;
         border-radius: $border-radius;
-        padding: 20px;
-        width: 35vw;
+        padding: 10px;
+        width: 100%;
         display: none;
 
         &:hover {
@@ -39,7 +39,7 @@
         &_img {
             overflow: hidden;
             width: 100%;
-            height: 20vw;
+            height: 45vw;
 
             img {
                 width: 100%;
@@ -50,13 +50,13 @@
         }
 
         &_text {
-            display: none;
             position: absolute;
-            bottom: 10%;
-            left: 5%;
-            font-size: 20px;
+            bottom: 10px;
+            left: 10px;
+            font-size: 12px;
             font-weight: bold;
-            max-width: 90%;
+            width: calc(100% - 20px);
+            background-color: rgba(0, 0, 0, 0.75);
 
             &:hover {
                 color: $color-background-light;
@@ -92,7 +92,7 @@
 
     .container {
         overflow: hidden;
-
+        padding: 0 20px;
         &_flex {
             display: flex;
             justify-content: space-evenly;
@@ -103,36 +103,162 @@
     }
 }
 
-@media (max-width: 1025px) {
+@media (min-width:414px) {  
     .filter {
 
-        &__card {
-            padding: 15px;
-            width: 44vw;
-        }
+		&__buttons {
+		}
 
-        &__link {
+		&__card {
+		}
 
-            &_img {
-                height: 27vw;
-            }
-        }
+		&__link {
+
+			&_img {
+			}
+
+			&_text {
+                font-size: 14px;
+			}
+		}
     }
+    .btn {
+    }
+
+    .container {
+
+		&__card {
+		}
+    }
+
 }
 
-@media (max-width: 991px) {
+@media (min-width:480px) {  
     .filter {
 
-        &__card {
-            padding: 15px;
-            width: 80vw;
-        }
+		&__buttons {
+		}
 
-        &__link {
+		&__card {
+		}
 
-            &_img {
-                height: 40vw;
-            }
-        }
+		&__link {
+
+			&_img {
+			}
+
+			&_text {
+			}
+		}
     }
+    .btn {
+    }
+
+    .container {
+
+		&__card {
+		}
+    }
+
+}
+@media (min-width:768px) {  
+    .filter {
+
+		&__buttons {
+		}
+
+		&__card {
+		}
+
+		&__link {
+
+			&_img {
+			}
+
+			&_text {
+                font-size: 16px;
+			}
+		}
+    }
+    .btn {
+    }
+
+    .container {
+
+		&__card {
+		}
+    }
+
+}
+
+@media (min-width:991px) {  
+    .filter {
+
+		&__buttons {
+		}
+
+		&__card {
+            padding: 15px;
+            width: calc(50% - 10px);
+		}
+
+		&__link {
+
+			&_img {
+                height: 22vw;
+			}
+
+			&_text {
+                bottom: 15px;
+                left: 15px;
+                width: calc(100% - 30px);
+			}
+		}
+    }
+    .btn {
+    }
+
+    .container {
+
+		&__card {
+		}
+    }
+
+}
+
+@media (min-width:1024px) {  
+    .filter {
+
+		&__buttons {
+		}
+
+		&__card {
+            padding: 20px;
+            width: calc(50% - 10px);
+		}
+
+		&__link {
+
+			&_img {
+                height: 22vw;
+			}
+
+			&_text {
+                display: none;
+                bottom: 20px;
+                left: 20px;
+                width: calc(100% - 40px);
+                font-size: 20px;
+			}
+		}
+    }
+    .btn {
+    }
+
+    .container {
+
+		&__card {
+		}
+    }
+
 }
