@@ -221,6 +221,9 @@ svg {
     max-width: 30vw;
     height: 500px;
   }
+  .services__card-item:hover {
+    transform: none;
+  }
 }
 @media (max-width: 1000px) {
   .services__img {
@@ -497,7 +500,6 @@ svg {
   border: 2px solid #333;
   border-radius: 5px;
   padding: 20px;
-  color: #ffffff;
   width: 35vw;
   display: none;
 }
@@ -575,6 +577,24 @@ svg {
   margin-top: 40px;
 }
 
+@media (max-width: 1024px) {
+  .filter__card {
+    padding: 15px;
+    width: 45vw;
+  }
+  .filter__link_img {
+    height: 27vw;
+  }
+}
+@media (max-width: 991px) {
+  .filter__card {
+    padding: 15px;
+    width: 80vw;
+  }
+  .filter__link_img {
+    height: 40vw;
+  }
+}
 .hero_service {
   height: 100vh;
   background: url(../../../images/render-services.jpeg) no-repeat;

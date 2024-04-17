@@ -287,6 +287,10 @@ svg {
             max-width: 30vw;
             height: 500px;
 		}
+
+        &__card-item:hover {
+            transform: none;
+        }
     }
 }
 
