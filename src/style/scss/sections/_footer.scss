@@ -1,0 +1,152 @@
+@import 'variables.scss';
+
+.footer {
+    background: #000;
+    color: $color-text;
+    padding: 20px 0 40px;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__flex-item {
+
+        &_company {
+            max-width: 350px;
+            img {
+                max-width: 200px;
+                background-color: $color-backgroung-drop;
+            }
+        }
+
+        &_services {
+
+        }
+
+        &_links {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                padding: 5px 5px 5px 0;
+                color: $color-text;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                
+                &:hover {
+                    color: $color-accent;
+                }
+            }
+        }
+
+        &_contacts {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_contact-details {
+            
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: $color-text;
+                transition: all 0.3s ease-in-out;
+                svg {
+                    margin-right: 10px;
+                    fill: $color-text;
+                    height: 20px;
+                    width: 20px;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover {
+                    color: $color-accent;
+                    svg {fill: $color-accent;}
+                }
+            }
+        }
+    }
+}
+
+.social {
+    margin-top: 30px;
+
+    &__link {
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    svg {
+        fill: $color-accent;
+        width: 40px;
+        height: 40px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            fill: whitesmoke;
+        }
+    }
+}
+
+@media(max-width:1023px) {
+    .footer {
+
+        &__flex {
+		}
+
+		&__flex-item {
+
+			&_company {
+                max-width: 200px;
+			}
+		}
+    }
+}
+
+@media(max-width:767px) {
+    .footer {
+
+		&__flex {
+            flex-wrap: wrap;
+		}
+
+		&__flex-item {
+
+			&_company {
+                order: 3;
+                max-width: 75vw;
+                margin: 0 auto;
+			}
+
+			&_services {
+                display: none;
+			}
+
+			&_contacts {
+                margin: 0 auto;
+			}
+		}
+    }
+
+    .social {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-evenly;
+            &__link {
+            }
+    }
+
+}
+@media(max-width:424px) {
+    .footer__flex-item_contact-details {
+        font-size: 14px;
+    }
+    .social {
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}
