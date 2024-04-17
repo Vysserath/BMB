@@ -577,7 +577,7 @@ svg {
   margin-top: 40px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .filter__card {
     padding: 15px;
     width: 45vw;
