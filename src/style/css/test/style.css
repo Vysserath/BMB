@@ -580,7 +580,7 @@ svg {
 @media (max-width: 1025px) {
   .filter__card {
     padding: 15px;
-    width: 45vw;
+    width: 44vw;
   }
   .filter__link_img {
     height: 27vw;
