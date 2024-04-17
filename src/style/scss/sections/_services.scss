@@ -12,12 +12,12 @@
         background-color: $color-background;
         color: $color-text;
         cursor: pointer;
-        padding: 18px;
+        padding: 10px;
         width: 100%;
         border: none;
         text-align: left;
         outline: none;
-        font-size: 20px;
+        font-size: 14px;
         transition: 0.4s;
       }
       
@@ -27,14 +27,15 @@
       }
       
       &__drop {
-        padding: 0 18px;
+        padding: 0 10px;
         background-color: $color-background;
         color: $color-text;
         max-height: 0;
         overflow: hidden;
         transition: all 0.2s ease-out;
         border-bottom: 2px solid $color-text-alternate;
-        line-height: 1.5;
+        line-height: 1.3;
+        font-size: 12px;
       }
 }
 .container {
@@ -42,13 +43,104 @@
 .title {
 }
 
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+
+@media (min-width:414px) {  
+  .service {
+
+		&__title {
+		}
+
+		&__button {
+		}
+
+		&__drop {
+		}
+}
+.container {
+}
+.title {
+}
+
+}
+
+@media (min-width:480px) {  
+  .service {
+
+		&__title {
+		}
+
+		&__button {
+		}
+
+		&__drop {
+		}
+}
+.container {
+}
+.title {
+}
+
+}
+@media (min-width:768px) {  
+  .service {
+
+		&__title {
+		}
+
+		&__button {
+      padding: 20px;
+      font-size: 16px;
+		}
+
+		&__drop {
+      padding: 0 20px;
+      font-size: 14px;
+      line-height: 1.5;
+		}
+}
+.container {
+}
+.title {
+}
+
+}
+
+@media (min-width:991px) {  
+  .service {
+
+		&__title {
+		}
+
+		&__button {
+      font-size: 18px;
+		}
+
+		&__drop {
+      font-size: 16px;
+		}
+}
+.container {
+}
+.title {
+}
+
+}
+
+@media (min-width:1024px) {  
+  .service {
+
+		&__title {
+		}
+
+		&__button {
+		}
+
+		&__drop {
+		}
+}
+.container {
+}
+.title {
+}
+
 }
