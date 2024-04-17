@@ -87,6 +87,14 @@ body {
         &:hover {
             background-color: $color-text-alternate;
             color: $color-background-light;
+            
+            svg {
+                stroke: $color-background-light;
+            }
+        }
+
+        svg {
+            stroke: $color-text-alternate;
         }
     }
     
@@ -207,11 +215,6 @@ body {
     background-size: cover;
 }
 
-svg {
-    fill: $color-accent;
-    width: 50px;
-}
-
 .services {
 
     &__title {
@@ -278,6 +281,11 @@ svg {
     & img {
         max-width: 100%;
         object-fit: contain;
+    }
+
+    svg {
+        fill: $color-accent;
+        width: 50px;
     }
 }
 
@@ -355,6 +363,11 @@ svg {
     }
 
     &__card-text {
+    }
+
+    svg {
+        fill: $color-accent;
+        width: 50px;
     }
 }
 

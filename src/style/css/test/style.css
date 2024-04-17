@@ -72,6 +72,12 @@ body {
   background-color: #333;
   color: #fff;
 }
+.nav__link:hover svg {
+  stroke: #fff;
+}
+.nav__link svg {
+  stroke: #333;
+}
 .nav__dropdown-list {
   display: none;
   padding: 0;
@@ -160,11 +166,6 @@ body {
   background-size: cover;
 }
 
-svg {
-  fill: #D01B17;
-  width: 50px;
-}
-
 .services__title {
   color: #ccc;
 }
@@ -214,6 +215,10 @@ svg {
 .services img {
   max-width: 100%;
   object-fit: contain;
+}
+.services svg {
+  fill: #D01B17;
+  width: 50px;
 }
 
 @media (max-width: 1025px) {
@@ -268,6 +273,11 @@ svg {
 .choose__card-item:nth-child(odd):hover {
   transform: translateY(25px);
 }
+.choose svg {
+  fill: #D01B17;
+  width: 50px;
+}
+
 @media (max-width: 1025px) {
   .choose__card-container {
     flex-wrap: wrap;
@@ -641,6 +651,9 @@ svg {
   background-color: #000;
   color: #D01B17;
 }
+.service .active svg, .service__button:hover svg {
+  transform: rotate(180deg);
+}
 .service__drop {
   padding: 0 10px;
   background-color: #1c1c1c;
@@ -651,6 +664,10 @@ svg {
   border-bottom: 2px solid #333;
   line-height: 1.3;
   font-size: 12px;
+}
+.service svg {
+  fill: none;
+  transition: all 0.4s ease-in-out;
 }
 
 @media (min-width: 768px) {
