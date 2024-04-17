@@ -129,6 +129,7 @@ body {
         }
     }
 }
+
 @media(max-width:1023px) {
 
     .header {
@@ -251,11 +252,16 @@ svg {
         color: $color-text;
         border: $color-accent 1px solid;
         border-radius: $border-radius;
+        transition: all 0.5s ease-in-out;
 
         & svg {
             width: 70px;
             display: block;
             margin: 0 auto;
+        }
+
+        &:hover {
+            transform: scale(1.09);
         }
     }
 
@@ -277,39 +283,11 @@ svg {
 
 @media(max-width:1025px) {
     .services {
-
-		&__title {
-		}
-
-		&__card-container {
-		}
-
 		&__img {
             max-width: 30vw;
             height: 500px;
 		}
-
-		&__card-item {
-		}
-
-		&__card-title {
-		}
-
-		&__card-list {
-		}
-
-		&__card-listitem {
-		}
     }
-    .container {
-    }
-    .title {
-    }
-    .wrapper {
-    }
-    .wrap {
-    }
-
 }
 
 @media(max-width:1000px) {
@@ -352,6 +330,7 @@ svg {
         border: $color-accent 1px solid;
         border-radius: $border-radius;
         transition: all 0.5s ease-in-out;
+
         &:nth-child(even) {
             margin-top: 50px;
 
