@@ -141,6 +141,9 @@
   background: #000;
   color: #ccc;
   padding: 20px 0 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .footer__flex {
   display: flex;
@@ -248,13 +251,24 @@
 }
 
 body {
+  position: relative;
   min-height: 100vh;
   font-family: "Railway", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 0 571px;
   background-color: #1c1c1c;
 }
 
+@media (min-width: 414px) {
+  body {
+    padding: 0 0 560px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    padding: 0 0 345px;
+  }
+}
 .title {
   font-size: 40px;
 }
@@ -510,7 +524,8 @@ body {
   }
 }
 .about {
-  margin-top: 100px;
+  margin: 100px auto 0;
+  max-width: 70%;
   color: #ccc;
 }
 .about__text {
@@ -662,13 +677,93 @@ body {
     font-size: 20px;
   }
 }
-.hero_service {
+.hero-service {
+  position: relative;
   height: 100vh;
   background: url(../../../images/render-services.jpeg) no-repeat;
   background-position: center;
   background-size: cover;
 }
+.hero-service__title {
+  margin: 0;
+  padding: 20px;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+}
 
+.base {
+  color: #ccc;
+}
+.base__title {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.base__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.base__list-item {
+  position: relative;
+  padding: 0px 30px;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+.base__list-item::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 28px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.base__subtitle {
+  font-size: 16px;
+}
+.base__text {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .base__title {
+    font-size: 24px;
+  }
+  .base__list-item {
+    width: 50%;
+    border: none;
+  }
+  .base__list-item::before {
+    left: -10px;
+    top: 30px;
+  }
+  .base__list-item:hover::before {
+    background-color: #D01B17;
+    width: 30px;
+  }
+  .base__subtitle {
+    font-size: 18px;
+  }
+  .base__text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 991px) {
+  .base__list-item::before {
+    left: -10px;
+    top: 30px;
+  }
+  .base__list-item:hover::before {
+    width: 35px;
+  }
+}
 .service__button {
   background-color: #1c1c1c;
   color: #ccc;
@@ -678,7 +773,7 @@ body {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 14px;
+  font-size: 16px;
   transition: 0.4s;
 }
 .service .active, .service__button:hover {
@@ -697,7 +792,7 @@ body {
   transition: all 0.2s ease-out;
   border-bottom: 2px solid #333;
   line-height: 1.3;
-  font-size: 12px;
+  font-size: 14px;
 }
 .service svg {
   fill: none;

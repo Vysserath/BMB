@@ -5,12 +5,26 @@
   }
 
 body {
+    position: relative;
     min-height: 100vh;
     font-family: $font-main;
     margin: 0;
-    padding: 0;
+    padding: 0 0 571px;
     background-color: $color-background;
 }
+
+@media (min-width:414px) {  
+    body {
+        padding: 0 0 560px;
+    }
+}
+
+@media (min-width:768px) {  
+    body {
+        padding: 0 0 345px;
+    }
+}
+
 
 .main {}
 

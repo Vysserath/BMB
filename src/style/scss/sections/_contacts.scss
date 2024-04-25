@@ -110,7 +110,8 @@
 
 
 .about {
-    margin-top: 100px;
+    margin: 100px auto 0;
+    max-width: 70%;
     color: $color-text;
 
     &__text {
