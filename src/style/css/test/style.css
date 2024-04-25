@@ -509,6 +509,33 @@ body {
     display: none;
   }
 }
+.about {
+  margin-top: 100px;
+  color: #ccc;
+}
+.about__text {
+  line-height: 1.4;
+}
+.about__title {
+  font-size: 30px;
+}
+.about__link {
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+.about__link:hover {
+  color: #D01B17;
+}
+.about hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #D01B17;
+  border-radius: 10px;
+  margin: 0 20px 0 0;
+}
+
 .filter {
   margin-top: 100px;
 }
@@ -675,6 +702,7 @@ body {
 .service svg {
   fill: none;
   transition: all 0.4s ease-in-out;
+  margin-left: 30px;
 }
 
 @media (min-width: 768px) {

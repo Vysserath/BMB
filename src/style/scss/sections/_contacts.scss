@@ -108,3 +108,38 @@
     }
 }
 
+
+.about {
+    margin-top: 100px;
+    color: $color-text;
+
+    &__text {
+        line-height: 1.4;
+    }
+
+    &__title {
+        font-size: 30px;
+    }
+
+    &__subtitle {
+        
+    }
+
+    &__link {
+        color: $color-text;
+        text-decoration: none;
+        transition: all 0.1s ease-in-out;
+        &:hover {
+            color: $color-accent;
+        }
+    }
+
+    hr {
+        border: none;
+        width: 120px;
+        height: 5px;
+        background-color: $color-accent;
+        border-radius: 10px;
+        margin:0 20px 0 0;
+    }
+}
