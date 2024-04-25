@@ -8,7 +8,7 @@
     background-size: cover;
 
     &__title {
-      margin: 0;
+      margin: 0 0 15px;
       padding: 20px;
       color: $color-text;
       background-color: rgba(0, 0, 0, 0.75);
@@ -26,15 +26,22 @@
 
 }
 @media (min-width:768px) {  
-
+  .hero-service__title {
+    font-size: 30px;
+  }
 }
 
 @media (min-width:991px) {  
-
+  .hero-service__title {
+    margin-bottom: 0;
+    font-size: 35px;
+  }
 }
 
 @media (min-width:1024px) {  
-
+  .hero-service__title {
+    font-size: 40px;
+  }
 }
 
 .base {
@@ -149,7 +156,6 @@
   }
 
 }
-
 
 .service {
     &__button {
